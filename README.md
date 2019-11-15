@@ -14,7 +14,7 @@ It only able to send a simple restful based log. Do not support another npm logg
 requirment node 12+ ( current lts @ 2019 )
 
 ```conosle
-yarn add insighops-client
+yarn add insightops-client
 ```
 
 # example
