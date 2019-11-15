@@ -20,9 +20,9 @@ yarn add insightops-client
 # example
 
 ```js
-import { logger } from 'insighops-client'
+import { logger } from 'insightops-client'
 
-// expected log @ insighops will be
+// expected log @ insightops will be
 // {
 //   "event": {
 //     "message": "hello world",
