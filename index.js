@@ -32,21 +32,17 @@ const Logger = ({ token, level, message, data }) => {
 }
 
 const logger = token => {
-  const log = ({ message, data }) => {
-    return Logger({ token: token, level: LOG_LEVEL.LOG, message, data })
-  }
+  const log = ({ message, data }) =>
+    Logger({ token: token, level: LOG_LEVEL.LOG, message, data })
 
-  const warm = ({ message, data }) => {
-    return Logger({ token: token, level: LOG_LEVEL.WARN, message, data })
-  }
+  const warm = ({ message, data }) =>
+    Logger({ token: token, level: LOG_LEVEL.WARN, message, data })
 
-  const error = ({ message, data }) => {
-    return Logger({ token: token, level: LOG_LEVEL.ERROR, message, data })
-  }
+  const error = ({ message, data }) =>
+    Logger({ token: token, level: LOG_LEVEL.ERROR, message, data })
 
-  const info = ({ message, data }) => {
-    return Logger({ token: token, level: LOG_LEVEL.INFO, message, data })
-  }
+  const info = ({ message, data }) =>
+    Logger({ token: token, level: LOG_LEVEL.INFO, message, data })
 
   return {
     log,
