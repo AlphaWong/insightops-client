@@ -64,3 +64,7 @@ curl -X POST \
  -H 'cache-control: no-cache' \
  -d '{"event":{"message":"123", "data":"321"},"level":"INFO"}'
 ```
+
+# about log key
+
+<img src="https://i.imgur.com/t0Il9K5.png">
