@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/AlphaWong/insightops-client.svg?branch=master)](https://travis-ci.com/AlphaWong/insightops-client)
+[![codecov](https://codecov.io/gh/AlphaWong/insightops-client/branch/master/graph/badge.svg)](https://codecov.io/gh/AlphaWong/insightops-client)
+
 # objective
 
 As the current official client-side JavaScript logging library for InsightOps do not fit my bussines. I would like to have this pakcage to help.

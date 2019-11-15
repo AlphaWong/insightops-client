@@ -7,6 +7,10 @@
   "scripts": {
     "test": "LOG_KEY=uuid jest"
   },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlphaWong/insightops-client.git"
