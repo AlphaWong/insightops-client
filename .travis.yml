@@ -1,15 +1,17 @@
 language: node_js
 node_js:
-  - '12'
+- '12'
 install:
-  - npm install -g codecov
+- npm install -g codecov
 before_script:
-  - yarn
+- yarn
 script:
-  - yarn test && codecov
-
+- yarn test && codecov
 deploy:
   provider: npm
-  email: 'alpha.wong@tuta.io'
+  email: alpha.wong@tuta.io
+  script: echo "Deploying to npm ..."
   on:
     tags: true
+  api_key:
+    secure: Z5BYwrHq0Qai35I1gMY5b4No3zj5MwMD+0guJ4r+chKSbEFywj+bVXPTuatYfDfTEaAqUKA5e5KI5W3DCLvbP2PH0kF4doEp4gK3enUZa4LGH4FtE2+AscKaeCavYxjJGajZyi3TEruqJwf7eDjzx8ADQEZajcKS6oBpTKDsj3I1OKtg0A9tsJDb+yJsPyAh9v1Ons1F0pSpZ5UuKhZE5G7PMdROJtkO3kHq5udy4I4uSk0U7Iipo8dMraEx0vqDFNZe62bZkqkHYvHb0CQznLeLVVAbNg0idHhyk8QZU4jVcLsUYVkT6L7gG3IeqyGq93KYe2O2vs26PLz3ewMiOnI2+R/KQMtYD/eigMuh91K9odt2805uD4JU5UhhlYFCm2u4M15l2cVkjBbPPSVHsvoGupqTOw0OqxaO/Zd5sHp3xntmsrPMgGyXfnPseWV93RPlo976VWyGspvY9zGZ8qPYNjZg7etYzeavXumZR8vvMkrZyHZ1B/3/3v7aDt5Wgl69DVKz63iuWo19hcuiGGmwZxxdfa6fS3BqvEximt2ORxVFafwWYShW4zyHXMjBQu6Q8CxYGUl8P/wEnEa2UWZpBOlIve4ZfzfPztJqLT4k9iUBy0dvwBI2IeWsqJHDNhY+jt5zT2T92WwOvx4jtoHxfQiYCQ42ujJURZQBtVM=
