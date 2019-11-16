@@ -7,3 +7,9 @@ before_script:
   - yarn
 script:
   - yarn test && codecov
+
+deploy:
+  provider: npm
+  email: 'alpha.wong@tuta.io'
+  on:
+    tags: true

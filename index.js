@@ -19,7 +19,6 @@ const Logger = ({ token, level, message, data }) => {
       level,
       event: {
         message,
-        data,
         stringify: JSON.stringify(data)
       }
     },

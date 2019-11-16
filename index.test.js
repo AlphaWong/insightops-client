@@ -15,7 +15,7 @@ test('fire correct LOG json to insignOps', async () => {
     .post('/v1/logs/uuid', {
       level: logger.LOG_LEVEL.LOG,
       event: {
-        ...requestJSON,
+        message: requestJSON.message,
         stringify: JSON.stringify(requestJSON.data)
       }
     })
@@ -32,7 +32,7 @@ test('fire correct INFO json to insignOps', async () => {
     .post('/v1/logs/uuid', {
       level: logger.LOG_LEVEL.INFO,
       event: {
-        ...requestJSON,
+        message: requestJSON.message,
         stringify: JSON.stringify(requestJSON.data)
       }
     })
@@ -49,7 +49,7 @@ test('fire correct WARN json to insignOps', async () => {
     .post('/v1/logs/uuid', {
       level: logger.LOG_LEVEL.WARN,
       event: {
-        ...requestJSON,
+        message: requestJSON.message,
         stringify: JSON.stringify(requestJSON.data)
       }
     })
@@ -66,7 +66,7 @@ test('fire correct ERROR json to insignOps', async () => {
     .post('/v1/logs/uuid', {
       level: logger.LOG_LEVEL.ERROR,
       event: {
-        ...requestJSON,
+        message: requestJSON.message,
         stringify: JSON.stringify(requestJSON.data)
       }
     })
