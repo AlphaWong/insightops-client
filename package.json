@@ -1,6 +1,6 @@
 {
   "name": "insightops-client",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "it implements the basic logger function for https://www.rapid7.com/products/insightops/",
   "main": "index.js",
   "prettier": "prettier-config-standard",
