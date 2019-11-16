@@ -9,6 +9,7 @@ script:
   - yarn test && codecov
 deploy:
   provider: npm
+  edge: true
   email: alpha.wong@tuta.io
   on:
     branch: master
