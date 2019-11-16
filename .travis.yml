@@ -1,17 +1,16 @@
 language: node_js
 node_js:
-- '12'
+  - '12'
 install:
-- npm install -g codecov
+  - npm install -g codecov
 before_script:
-- yarn
+  - yarn
 script:
-- yarn test && codecov
+  - yarn test && codecov
+
 deploy:
-  provider: npm
-  email: alpha.wong@tuta.io
-  api_key:
-    secure: 2W78z6QVzmTkWKx1MPHy9LHkANjUSNG74Y9LchQ3dMeTyZNvHYqS8fMOGwMO3J4cDQo3M/rDB2VyoHr46K7kmWIdamB3XM1LLovEf27rcQcPBZwdf7t0f2hcgTtQauhOkFw/6s4ffSFDbUvGfeb70Oyjo+2+sK30V1Q2oQZYylGk8+pVI2KFerIEu1LrxEty3lrHY7WuA8RPGvZfMCsGU1o4VI7/TSkn2JSnvqfGQsS0quuRPtBitp56OmZA0IUEaQI1DnXpQ/N6miNoq1k/znijmRcUWgwlO4tS6R3S3GM3m1z/K9oc+FO5CPdrkHfEX1QWdPS2x6wRO8U02pqzFI5grMvXN+xfFfyy1AEJLmheC+CpGMsKJhAkF3VOBt8s8AktG4JKS1XU1OleIeZJqomQwZ5xUK+17dNR0xBQs7aqByFLw4mVds1b1xsqB9DbiRQ+ePxzsKWqu3RCv4UcO226S7QffPxJcsrzjNjxgZQIp1OG8QeF9wyI6IpHr1PL0Yb9LoNTkwn1Nwj8iFXSXXv941xQXMDV7xby83YoGVDogAASL1B/64Rnf+XneC0/pCOduGFqV27OVX7R8MzyUhmAE0hapQFUFh0A+QhkLyEloqQe8Z+5bTZFZS/2h5U9/Nbtp990WbU3J/XnERxvNeUHRRjWt2TZwahkmAoscwU=
+  script:
+    - npm publish
   on:
     tags: true
     repo: AlphaWong/insightops-client
