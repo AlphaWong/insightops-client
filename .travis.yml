@@ -10,7 +10,8 @@ script:
 deploy:
   provider: npm
   email: alpha.wong@tuta.io
-  api_key: $NPM_TOKEN
   on:
-    tags: true
+    branch: master
     repo: AlphaWong/insightops-client
+  api_key:
+    secure: hMjMfuR111ojX8xLrZiyUb/8EAL3P9SKtdATfsZLp8sm9QOYahYwhpuQ4kbck9j663UxrSQMw4PnqVx6fvOL9GStkp7Xh/Ol9lPpwLeWt05AHrqjr25UfxqGpjkEH2PbqWPXzfA9sGoqIM3Fy55RNTZRv+fwGyRI3Zy1Rf/n2PjB5aia2U1AJLpRu+0hN124YHkqnkJjj5CQVrACS+NvZKMwWEEg/GNWgmGMZEvCW61VPFD39BY2p/FexVjnh7Xau1uKkf10iciZ3N54ygXwfP+IL0Cet/hqPAcfsahDtebR1nDEsr+U7mg64d/3CCPhCgF7MU4YF/L1HRKzsDVT0KiF/9jpeSzoBuTWf50n59wlh0syueuuPAbKH+9AlyxxoZPpBuubx8ZTyCAntKDDEmG4IL6SbuCkO1TLKTbVmJ4wToTJJkggUDNrZy7WgcWigcrtq66Qiif2LR3yYtTSn6tRMQ63e/iOqZ/QafUoyAYhvXzqC+xaZaASM6j9Zgdg2SXZwCdhwA2FrRs251E7znY5mLnd1SkKMlqoKZESIhAADcBRBN++re7QIx+WaI9/q4OOGoTjhkfd8P0FOuryGeEYQ7tEyjo3ekO6HziqCxsA4czUtQSPtdtu47XXCaqAXoooCrbgL0IyWMdLwcx7/o+syg7DttUZ+4GJulbCEn8=
