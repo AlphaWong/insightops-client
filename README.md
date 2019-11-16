@@ -26,9 +26,6 @@ import { logger } from 'insightops-client'
 // {
 //   "event": {
 //     "message": "hello world",
-//     "data": {
-//       "key": "value"
-//     },
 //     "stringify": "{\"key\":\"value\"}"
 //   }
 // }
